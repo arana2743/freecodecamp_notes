@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Survey Form</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h1 id="title">Survey Registration Form</h1>
+  <p id="description">Please fill out this survey form to help us serve you better.</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Enter your name: <input id="name" type="text" required placeholder="Enter you name"></label>
+    <br>
+    <label for="email" id="email-label">Enter you email: <input id="email" type="email" required placeholder="Enter your email"></label>
+    <br>
+    <label for="number" id="number-label">Enter a number: <input id="number" type="number" min="10" max="100" placeholder="Enter a number between 10 and 100"></label>
+    <br>
+    <label for="dropdown">
+      Please select your favourite dessert: 
+      <select id="dropdown">
+        <option>(select one)</option>
+        <option>Ice cream</option>
+        <option>Gajar Ka Halwa</option>
+      </select>
+    </label>
+    <br>
+    <label>
+      Are you a indoor person or outdoor:
+      <input type="radio" value="indoor" id="indoor" name="indoor-outdoor">Indoor
+      <input type="radio" value="outdoor" id="outdoor" name="indoor-outdoor">Outdoor
+    </label>
+    <br>
+    <label for="">
+      Choose your favorite pet types:
+      <input type="checkbox" value="cat" id="cat" name="fav-pet">Cat
+      <input type="checkbox" value="dog" id="dog" name="fav-pet">Dog
+      <input type="checkbox" value="frog" id="frog" name="fav-pet">Frog
+    </label>
+    <br>
+    <label for="">Please share any further comments: <textarea></textarea></label>
+    <br>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+</html>
